@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+            <h2>HOTEL<span>PRO</span></h2>
+
+            <button onclick="showPage('rooms')">🏨 Room Management</button>
+            <button onclick="showPage('bookings')">📋 Booking Management</button>
+            <button onclick="showPage('customers')">👥 Customers</button>
+            <button onclick="showPage('revenue')">📊 Revenue Analytics</button>
+        </aside>
+
+        <main class="main">
+            <header>
+                <div>
+                    <h1 id="pageTitle">Room Management</h1>
+                    <p>Hotel Management Admin Panel</p>
+                </div>
+                <span class="admin">👤 Admin</span>
+            </header>
+
+            <div id="content"></div>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
